@@ -15,6 +15,54 @@ Aplicacion movil de uso privado entre dos personas (Jose Gallardo y Francis Gall
 
 ---
 
+## Tema Visual Global
+
+### Filosofía de Diseño
+Estilo Art Decó clásico inspirado en la estética de cartelera de festival cinematográfico.
+Atmósfera de cine de época: marquesinas, ornamentos geométricos, tipografía editorial.
+Los bordes decorativos en L y los separadores con diamante central son los elementos
+visuales recurrentes que dan cohesión entre módulos. Todo construido con primitivas
+nativas, sin imágenes ni assets externos.
+
+---
+
+### Paleta de Colores
+
+| Token            | Hex       | Descripción                                                  |
+|------------------|-----------|--------------------------------------------------------------|
+| `colorBg`        | `#292824` | Fondo principal. Base oscura y cálida de toda la interfaz    |
+| `colorSurface`   | `#64584a` | Superficies elevadas sobre el fondo: tarjetas y relieves     |
+| `colorMuted`     | `#a29783` | Información secundaria, etiquetas, elementos inactivos       |
+| `colorGold`      | `#d5b880` | Acento primario: títulos, acciones, ornamentos y bordes clave|
+| `colorCrimson`   | `#934538` | Exclusivamente semántico: faltas, alertas y penalizaciones   |
+
+`colorGold` es el único color de acento interactivo de la app.
+`colorCrimson` nunca se usa con intención decorativa.
+
+---
+
+### Tipografía
+
+| Familia              | Variante           | Rol                                                             |
+|----------------------|--------------------|-----------------------------------------------------------------|
+| `Playfair Display`   | Bold / Black       | Títulos de pantalla y números prominentes (horas, contadores)   |
+| `Cormorant Garamond` | Light Italic / 400 | Subtítulos, notas de apoyo y texto secundario de tono literario |
+| `Josefin Sans`       | Ultralight / 300   | Etiquetas funcionales, navegación y badges — siempre en mayúsculas con espaciado amplio |
+
+`Playfair Display` y `Cormorant Garamond` son tipografías de display: aparecen en
+jerarquías altas y textos de lectura. `Josefin Sans` cubre todo lo funcional y navegacional.
+
+---
+
+### Ornamentos Visuales
+
+- **Esquinas en L** — bordes parciales en dos lados que enmarcan secciones y tarjetas
+- **Separador con diamante** — figura romboidal central entre dos líneas horizontales, usado como divisor entre bloques de contenido
+- **Bordes de tarjeta** — línea delgada en `colorGold` con baja opacidad
+- **Radio de esquina mínimo** — el estilo Art Decó evita bordes redondeados; se usan ángulos rectos o radios casi imperceptibles
+
+---
+
 ## Usuarios
 
 Dos usuarios fijos con roles simetricos:
