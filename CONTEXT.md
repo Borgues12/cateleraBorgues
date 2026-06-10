@@ -12,6 +12,7 @@ Aplicacion movil de uso privado entre dos personas (Jose Gallardo y Francis Gall
 - **Backend**: Firebase (Firestore, Authentication, Cloud Functions)
 - **Notificaciones**: Firebase Cloud Messaging
 - **API externa**: TMDB API (busqueda de peliculas y series)
+- **Programación**: En sistema Windows
 
 ---
 
@@ -244,6 +245,7 @@ lib/
 4. **Refactorizar al cerrar cada modulo**, no al final del proyecto
 5. **No avanzar de fase sin cumplir el criterio de cierre** establecido en el plan
 6. **El widget jamas accede directamente a Firestore o APIs**; siempre pasa por un repositorio
+7. **Utilizar solo pnpmm para instalar librerias**; debido al problema de hackeo de npm.
 
 ---
 
@@ -252,3 +254,8 @@ lib/
 Este proyecto es para práctica personal de Flutter. Tengo poco más de 1 año de experiencia como desarrollador, así que comprendo la mayoría de conceptos básicos e intermedios y puedo adaptarme con cierta rapidez. Puedes armar decisiones técnicas y planes de trabajo más complejos que los de un principiante absoluto (patrones de arquitectura, manejo de estado, estructura modular, etc.), sin necesidad de explicar cada fundamento desde cero.
 
 Cuando pida explicaciones, hazlo de la manera más simple posible y usa analogías básicas y cotidianas para comparar los conceptos. No asumas conocimiento avanzado en temas específicos salvo que yo lo demuestre en la conversación (por ejemplo, Flutter, Firebase, Cloud Functions o arquitecturas concretas).
+
+---
+##Instrucciones
+Cuando te pida ayuda con la explicacion de algun tema, puedes darme ejemplos de su uso en ambitos profesionales y utilizar analogias para que comprenda mejor la estructura de la idea.
+Manten la idea simple pero con estos detalles y limitate a dar los pasos de ayuda (no explicar todo siempre), solo cuando te pregunte sobre algo me das tu respuesta para comprenderlo

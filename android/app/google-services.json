@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476397638334",
+    "project_id": "cartelerac-a7797",
+    "storage_bucket": "cartelerac-a7797.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476397638334:android:2adb064933785fcd7844ef",
+        "android_client_info": {
+          "package_name": "com.example.app_convivencia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMQGXQjK47P6cLvZKSHlIEiDzBfS-QNiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
