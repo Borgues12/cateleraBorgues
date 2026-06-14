@@ -9,5 +9,6 @@
 - [x] Fase 1 · Autenticación con Firebase Auth, manejo de estado con Riverpod, navegación condicional con go_router y persistencia de sesión
 
 ## En progreso
+- [ ] Faltas · Implementar botón "Registrar llegada" con hora del sistema
 
 ## Pendiente
