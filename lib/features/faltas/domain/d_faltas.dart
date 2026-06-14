@@ -14,9 +14,7 @@ class Falta with _$Falta {
     required String id,
     required String userId,
     required DateTime fecha,
-    DateTime? horaLlegada,
-    required int minutosRetraso,
-    String? motivo,
+    required String motivo,
     required DateTime creadaEn,
   }) = _Falta;
 
