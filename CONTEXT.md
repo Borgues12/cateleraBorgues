@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Aplicacion movil de uso privado entre dos personas (Jose Gallardo y Francis Gallardo) para gestionar y registrar las actividades establecidas en su Acuerdo de Convivencia Audiovisual. El proyecto tiene como proposito principal la practica de desarrollo con Flutter.
+Aplicacion movil de uso privado (con posibilidad a uso comun) para gestionar y registrar las actividades establecidas en su Acuerdo de Convivencia Audiovisual. El proyecto tiene como proposito principal la practica de desarrollo con Flutter.
 
 ---
 
@@ -70,7 +70,8 @@ Dos usuarios fijos con roles simetricos:
 - Jose Gallardo
 - Francis Gallardo
 
-Ambos acceden desde sus propios dispositivos. No hay registro publico ni nuevos usuarios.
+Posibilidad de escalabilidad entre varios usuarios, no limitarse a solo los dos.
+Se accede desde los dispositivos.
 
 ---
 

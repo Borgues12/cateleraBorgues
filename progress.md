@@ -12,3 +12,6 @@
 - [ ] Faltas · Implementar botón "Registrar llegada" con hora del sistema
 
 ## Pendiente
+- [ ] Modelo de "grupos": horarios, días de asistencia y reglas de falta configurables por grupo
+- [ ] config/horarios debe pasar de documento global a sub-colección por grupo
+- [ ] Verificación de email en flujo de registro (Fase 1 - Auth)

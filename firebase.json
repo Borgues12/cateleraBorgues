@@ -1,1 +1,39 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"cartelerac-a7797","appId":"1:476397638334:android:2adb064933785fcd7844ef","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"cartelerac-a7797","configurations":{"android":"1:476397638334:android:2adb064933785fcd7844ef","web":"1:476397638334:web:a2a8a357155e17087844ef"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "cartelerac-a7797",
+          "appId": "1:476397638334:android:2adb064933785fcd7844ef",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cartelerac-a7797",
+          "configurations": {
+            "android": "1:476397638334:android:2adb064933785fcd7844ef",
+            "web": "1:476397638334:web:a2a8a357155e17087844ef"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
