@@ -1,12 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:app_convivencia/core/utils/calcular_retraso.dart'; //utils
-import '../../domain/d_asistencias.dart';
-import '../../domain/d_horarios.dart';
-import '../../domain/repository/d_asistenciaRepository.dart';
-import '../../domain/repository/d_horariosRepository.dart';
-import '../../data/dt_asistencias.dart';
-import '../../data/dt_horarios.dart';
+import '../domain/d_asistencias.dart';
+import '../domain/d_horarios.dart';
+import '../domain/repository/d_asistenciaRepository.dart';
+import '../domain/repository/d_horariosRepository.dart';
+import '../data/dt_asistencias.dart';
+import '../data/dt_horarios.dart';
 
 
 /// Provider del repositorio de asistencias

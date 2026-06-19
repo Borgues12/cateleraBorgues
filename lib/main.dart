@@ -7,13 +7,15 @@ import 'package:app_convivencia/core/theme/theme.dart'; //estilos
 import 'core/router/app_router.dart';
 
 //test
-import 'features/faltas/presentation/prov_falta.dart';
-import 'features/faltas/domain/d_faltas.dart';
+import 'package:app_convivencia/features/asistencias/presentation/scr_registrarLlegada.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(const ProviderScope(child: MyApp()));
+void main() {
+  runApp(
+    // Riverpod requiere un ProviderScope en la raíz para manejar el estado
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -22,38 +24,49 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TestFaltasScreen(),
+      title: 'App Convivencia',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const HomeScreen(),
     );
   }
 }
 
-class TestFaltasScreen extends ConsumerWidget {
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final repo = ref.read(faltasRepositoryProvider);
-
+  Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Control de Convivencia'),
+        centerTitle: true,
+      ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () async {
-            final falta = Falta(
-              id: 'test-001',
-              userId: 'jose',
-              fecha: DateTime.now(),
-              horaLlegada: DateTime.now(),
-              minutosRetraso: 10,
-              motivo: 'Prueba de escritura',
-              creadaEn: DateTime.now(),
-            );
-
-            await repo.registrarFalta(falta);
-
-            final faltas = await repo.obtenerFaltasPorUsuario('jose');
-            for (final f in faltas) {
-              debugPrint('Falta encontrada: ${f.id} - ${f.motivo}');
-            }
-          },
-          child: const Text('Registrar falta de prueba'),
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                '¡Bienvenido!',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Registra tu asistencia diaria a continuación:',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.grey),
+              ),
+              const SizedBox(height: 32),
+              
+              // Aquí incrustamos tu botón real mapeado con tu ID de desarrollo
+              const RegistrarLlegadaButton(userId: 'jose'),
+            ],
+          ),
         ),
       ),
     );

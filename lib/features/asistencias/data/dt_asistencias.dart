@@ -41,7 +41,7 @@ class AsistenciaRepositoryImpl implements AsistenciaRepository {
     };
   }
 
-#region metodos de la interfaz
+// region metodos de la interfaz
   @override
   Future<Asistencia?> getAsistenciaHoy(String userId) async {
     final hoy = DateTime.now();
@@ -58,5 +58,5 @@ class AsistenciaRepositoryImpl implements AsistenciaRepository {
     final docId = _buildDocId(asistencia.userId, asistencia.fecha);
     await _collection.doc(docId).set(_toFirestore(asistencia));
   }
-  #endregion
+ // endregion
 }
