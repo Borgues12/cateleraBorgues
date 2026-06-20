@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:app_convivencia/core/utils/calcular_retraso.dart'; //utils
-import 'prov_asistencias.dart';
+import '../prov_asistencias.dart';
 
 class RegistrarLlegadaButton extends ConsumerWidget {
   final String userId;

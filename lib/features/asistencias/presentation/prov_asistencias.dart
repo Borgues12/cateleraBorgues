@@ -61,7 +61,7 @@ class RegistrarLlegadaController extends AsyncNotifier<void> {
         motivo: motivo,
       );
 
-      await asistenciaRepo.registrarAsistencia(asistencia);
+      await asistenciaRepo.newAsistencia(asistencia);
 
       // Invalida el cache para refrescar el estado "ya registró hoy"
       ref.invalidate(asistenciaHoyProvider);

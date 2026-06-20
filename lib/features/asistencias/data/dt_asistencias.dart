@@ -54,7 +54,7 @@ class AsistenciaRepositoryImpl implements AsistenciaRepository {
   }
 
   @override
-  Future<void> registrarAsistencia(Asistencia asistencia) async {
+  Future<void> newAsistencia(Asistencia asistencia) async {
     final docId = _buildDocId(asistencia.userId, asistencia.fecha);
     await _collection.doc(docId).set(_toFirestore(asistencia));
   }
